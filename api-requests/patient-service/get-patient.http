@@ -1,0 +1,4 @@
+### GET request for all patients
+GET http://localhost:4000/patients
+
+###
