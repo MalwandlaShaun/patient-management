@@ -22,6 +22,8 @@ public class PatientService {
     private final BillingServiceGrpcClient billingServiceGrpcClient;
     private final KafkaProducer kafkaProducer;
 
+    private final static String PATIENT_NOT_FOUND_MESSAGE = "Patient not found of ID ";
+
     public PatientService(PatientRepository patientRepository, BillingServiceGrpcClient billingServiceGrpcClient, KafkaProducer kafkaProducer) {
         this.patientRepository = patientRepository;
         this.billingServiceGrpcClient = billingServiceGrpcClient;

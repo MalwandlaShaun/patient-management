@@ -1,0 +1,10 @@
+### Login Request to retrieve a JWT token
+POST http://localhost:4005/login
+content-type: application/json
+
+{
+  "email": "testuser@test.com",
+  "password": "password123"
+}
+
+###
