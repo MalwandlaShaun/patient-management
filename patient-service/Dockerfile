@@ -10,7 +10,9 @@ COPY src ./src
 
 RUN mvn clean package -DskipTests
 
-FROM openjdk:21-jdk AS runner
+# Stage 2: Run
+# FIX: Use eclipse-temurin instead of openjdk
+FROM eclipse-temurin:21-jdk AS runner
 
 WORKDIR /app
 
